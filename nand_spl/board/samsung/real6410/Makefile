@@ -37,7 +37,7 @@ LDFLAGS := -T $(nandobj)u-boot.lds -Ttext $(CONFIG_SYS_TEXT_BASE) $(LDFLAGS) \
 AFLAGS	+= -DCONFIG_NAND_SPL
 CFLAGS	+= -DCONFIG_NAND_SPL -ffunction-sections
 
-SOBJS	= start.o cpu_init.o lowlevel_init.o
+SOBJS	= start.o cpu_init.o lowlevel_init.o ctr0.o
 COBJS	= nand_boot.o nand_ecc.o s3c64xx.o smdk6400_nand_spl.o nand_base.o
 
 SRCS	:= $(addprefix $(obj),$(SOBJS:.o=.S) $(COBJS:.o=.c))
@@ -74,6 +74,9 @@ $(obj)start.S:
 $(obj)cpu_init.S:
 	@rm -f $@
 	@ln -s $(TOPDIR)/arch/arm/cpu/arm1176/s3c64xx/cpu_init.S $@
+$(obj)ctr0.S:
+	@rm -f $@
+	@ln -s $(TOPDIR)/arch/arm/lib/crt0.S $@
 
 # from board directory
 $(obj)lowlevel_init.S:
