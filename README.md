@@ -1,13 +1,16 @@
 u-boot-2013.01 for s3c6410 embedded board(real6410)
 
 Board: s3c6410  1G nand flash 128M DDR
+
 u-boot: u-boot-2013.01
 
 
 what is u-boot?
+
 Below is the u-boot readme 
 
 ===========================
+
 #
 # (C) Copyright 2000 - 2012
 # Wolfgang Denk, DENX Software Engineering, wd@denx.de.

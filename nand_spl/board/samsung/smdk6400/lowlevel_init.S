@@ -1,0 +1,1 @@
+/home/ying/prj/uboot/u-boot-2013.01/board/samsung/smdk6400/lowlevel_init.S

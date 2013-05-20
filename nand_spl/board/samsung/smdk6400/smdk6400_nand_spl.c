@@ -1,0 +1,1 @@
+/home/ying/prj/uboot/u-boot-2013.01/board/samsung/smdk6400/smdk6400_nand_spl.c

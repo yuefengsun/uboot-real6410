@@ -1,0 +1,1 @@
+/home/ying/prj/uboot/u-boot-2013.01/arch/arm/cpu/arm1176/start.S

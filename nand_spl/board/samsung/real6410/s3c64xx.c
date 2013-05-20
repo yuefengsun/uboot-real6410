@@ -1,0 +1,1 @@
+/home/ying/prj/uboot/u-boot-2013.01/drivers/mtd/nand/s3c64xx.c
